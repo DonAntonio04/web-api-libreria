@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cd18\\Desktop\\Toño\\libreriaa_JAMB\\libreriaa_JAMB.csproj": {}
+    "C:\\Users\\hp\\Desktop\\libreriaa_JAMB\\libreriaa_JAMB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cd18\\Desktop\\Toño\\libreriaa_JAMB\\libreriaa_JAMB.csproj": {
+    "C:\\Users\\hp\\Desktop\\libreriaa_JAMB\\libreriaa_JAMB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cd18\\Desktop\\Toño\\libreriaa_JAMB\\libreriaa_JAMB.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\libreriaa_JAMB\\libreriaa_JAMB.csproj",
         "projectName": "libreriaa_JAMB",
-        "projectPath": "C:\\Users\\cd18\\Desktop\\Toño\\libreriaa_JAMB\\libreriaa_JAMB.csproj",
-        "packagesPath": "C:\\Users\\cd18\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cd18\\Desktop\\Toño\\libreriaa_JAMB\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\libreriaa_JAMB\\libreriaa_JAMB.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\libreriaa_JAMB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cd18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,6 +45,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -69,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

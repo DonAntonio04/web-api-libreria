@@ -31,3 +31,13 @@ C:\Users\cd18\Desktop\Toño\libreriaa_JAMB\obj\Debug\net5.0\refint\libreriaa_JAM
 C:\Users\cd18\Desktop\Toño\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.pdb
 C:\Users\cd18\Desktop\Toño\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.genruntimeconfig.cache
 C:\Users\cd18\Desktop\Toño\libreriaa_JAMB\obj\Debug\net5.0\ref\libreriaa_JAMB.dll
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.AssemblyInfo.cs
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.dll
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\refint\libreriaa_JAMB.dll
+C:\Users\hp\Desktop\libreriaa_JAMB\obj\Debug\net5.0\libreriaa_JAMB.pdb
