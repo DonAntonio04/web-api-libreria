@@ -10,5 +10,6 @@ namespace libreriaa_JAMB.Data
             
         }
         public DbSet<Book> Books { get; set; }
+       
     }
 }

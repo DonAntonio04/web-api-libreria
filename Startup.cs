@@ -1,3 +1,5 @@
+using libreriaa_JAMB.Data;
+using libreriaa_JAMB.Data.Models.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,7 +33,8 @@ namespace libreriaa_JAMB
         {
 
             services.AddControllers();
-            services.AddDbContext<AppContext>(options => options.UseSqlServer(ConnectionString));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
+            services.AddTransient<BooksService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "libreriaa_JAMB", Version = "v1" });
@@ -58,6 +61,7 @@ namespace libreriaa_JAMB
             {
                 endpoints.MapControllers();
             });
+            AppDbInitializer.Seed(app);
         }
     }
 }
