@@ -3,6 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using libreriaa_JAMB.Data.Models;
 using System.Linq;
 using System;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace libreriaa_JAMB.Data
 {
@@ -24,7 +26,7 @@ namespace libreriaa_JAMB.Data
                             DateRead = DateTime.Now.AddDays(-10),
                             Rate = 4,
                             Genero = "Biography",
-                            Autor = "1st Author",
+                    
                             CoverUrl = "https...",
                             DateAdded = DateTime.Now,
                         },
@@ -34,11 +36,32 @@ namespace libreriaa_JAMB.Data
                             Descripcion = "2nd Book Descripcion",
                             IsRead = true,
                             Genero = "Biography",
-                            Autor = "2nd Author",
+                            
                             CoverUrl = "https...",
                             DateAdded = DateTime.Now,
                         });
-                        context.SaveChanges();
+                         context.SaveChanges();
+
+                        try
+                        {
+                            // Código para insertar en la base de datos
+                        }
+                        catch (DbUpdateException ex)
+                        {
+                            // Acceder a la excepción interna para obtener más detalles
+                            if (ex.InnerException is SqlException sqlEx && sqlEx.Number == 547)
+                            {
+                                // Aquí puedes manejar el error de clave foránea
+                                // Puedes obtener detalles adicionales de la excepción sqlEx
+                                Console.WriteLine("Error de clave foránea: " + sqlEx.Message);
+                            }
+                            else
+                            {
+                                // Otro tipo de error durante la actualización de la base de datos
+                                Console.WriteLine("Error al actualizar la base de datos: " + ex.Message);
+                            }
+                        }
+
                     }
                 } 
             }

@@ -35,6 +35,8 @@ namespace libreriaa_JAMB
             services.AddControllers();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
             services.AddTransient<BooksService>();
+            services.AddTransient<AuthorService>();
+            services.AddTransient<PublishersService> ();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "libreriaa_JAMB", Version = "v1" });
@@ -61,7 +63,7 @@ namespace libreriaa_JAMB
             {
                 endpoints.MapControllers();
             });
-            AppDbInitializer.Seed(app);
+          //AppDbInitializer.Seed(app);
         }
     }
 }
